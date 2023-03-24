@@ -7,9 +7,17 @@ menuToggle.addEventListener("click", () => {
 });
 
 function reloadWebsite(link) {
-  window.location.href = `${link}`;
+  let widthScreen = window.innerWidth;
 
-  window.location.reload();
+  if (widthScreen <= 768) {
+    window.location.href = `${link}`;
 
-  window.open(`${link}`, "_self");
+    window.location.reload();
+
+    window.open(`${link}`, "_self");
+  } else {
+    window.location.href = `${link}`;
+
+    window.open(`${link}`, "_self");
+  }
 }

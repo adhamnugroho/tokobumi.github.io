@@ -79,9 +79,8 @@ img {
   align-items: center;
 }
 
-.menu .brand {
-  font-size: 1.2em;
-  color: #333;
+.menu .brand img {
+  width: 70%;
 }
 
 .menu ul.menu-list {
@@ -210,7 +209,8 @@ ul.menu-list li a:hover {
   margin-top: 4%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 7px;
+  gap: 10px;
+  justify-items: space-evenly;
 }
 
 .gallery > .title-gallery {
@@ -219,6 +219,7 @@ ul.menu-list li a:hover {
   margin-bottom: 2%;
   font-weight: 700;
 }
+
 
 /* Responsive Breakpoints */
 /* Full HD */
@@ -289,9 +290,9 @@ ul.menu-list li a:hover {
 
 /* Handphone */
 @media screen and (max-width: 600px) {
-    body {
-        margin: 15px;
-    }
+  body {
+    margin: 15px;
+  }
 
   .header {
     grid-template-areas:
