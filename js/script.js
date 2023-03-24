@@ -5,3 +5,11 @@ const nav = document.querySelector("nav ul");
 menuToggle.addEventListener("click", () => {
   nav.classList.toggle("slide");
 });
+
+function reloadWebsite(link) {
+  window.location.href = `${link}`;
+
+  window.location.reload();
+
+  window.open(`${link}`, "_self");
+}

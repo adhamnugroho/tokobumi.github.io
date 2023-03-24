@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">
+      <header class="header" id="beranda">
         <div class="hero">
           <h2 class="heading">Toko Bu Umi</h2>
           <p class="sub-heading">Menjual barang kebutuhan sehari - hari.</p>
@@ -38,13 +38,13 @@
           <h1>Toko Bu Umi</h1>
         </div>
         <ul class="menu-list">
-          <li><a href="">Beranda</a></li>
-          <li><a href="">Tentang Kami</a></li>
-          <li><a href="">Produk</a></li>
-          <li><a href="">Galeri</a></li>
+          <li><a onclick="reloadWebsite('#beranda')">Beranda</a></li>
+          <li><a onclick="reloadWebsite('#beranda')">Tentang Kami</a></li>
+          <li><a onclick="reloadWebsite('#services')">Produk</a></li>
+          <li><a onclick="reloadWebsite('#gallery')">Galeri</a></li>
         </ul>
       </nav>
-      <section class="services">
+      <section class="services" id="services">
         <div class="service">
           <div class="icon">
             <i class="fa-solid fa-truck-fast fa-2xl"></i>
@@ -74,7 +74,7 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ullam.</p>
         </div>
       </section>
-      <section class="gallery">
+      <section class="gallery" id="gallery">
         <h2 class="title-gallery">Gallery</h2>
         <img src="https://source.unsplash.com/random/200x200/?japan" alt="*Image From Unsplash" />
         <img src="https://source.unsplash.com/random/201x201/?japan" alt="*Image From Unsplash" />
