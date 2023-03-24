@@ -1,5 +1,5 @@
 /* Import */
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap");
 
 /* Default Style */
 
@@ -165,7 +165,63 @@ ul.menu-list li a:hover {
   transform: scale(0);
 }
 
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.service {
+  box-sizing: border-box;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 18px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  user-select: none;
+  font-weight: bolder;
+  padding: 15px;
+}
+
+.service:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.service:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.service .icon,
+.service h3 {
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+.service p {
+  text-align: justify;
+  font-size: 0.8em;
+}
+
+.gallery {
+  margin-top: 4%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 7px;
+}
+
+.gallery > .title-gallery {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 2%;
+  font-weight: 700;
+}
+
 /* Responsive Breakpoints */
+/* Full HD */
 @media screen and (max-width: 1024px) {
   .hero {
     padding: 30px;
@@ -196,6 +252,7 @@ ul.menu-list li a:hover {
   }
 }
 
+/* Tablet */
 @media screen and (max-width: 768px) {
   .menu {
     order: -1;
@@ -230,7 +287,12 @@ ul.menu-list li a:hover {
   }
 }
 
+/* Handphone */
 @media screen and (max-width: 600px) {
+    body {
+        margin: 15px;
+    }
+
   .header {
     grid-template-areas:
       "hero"
@@ -253,5 +315,9 @@ ul.menu-list li a:hover {
 
   .features .item {
     margin-bottom: 10%;
+  }
+
+  .services {
+    margin: 5% 0;
   }
 }
