@@ -34,7 +34,6 @@ img {
 
 .hero {
   grid-area: hero;
-  /* max-width: 70%; */
   min-height: 300px;
   background-image: url("../assets/img/gambar_perkenalan_website.jpg");
   background-size: cover;
@@ -44,7 +43,8 @@ img {
 }
 
 .hero > * {
-  display: none;
+  display: block;
+  color: #fff;
 }
 
 .features {
@@ -65,6 +65,7 @@ img {
   grid-area: feature-2;
   background-image: url("../assets/img/gambar-slide-3.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 .features .price {
@@ -236,6 +237,14 @@ ul.menu-list li a:hover {
       "feature-1"
       "feature-2";
     grid-template-columns: 1fr;
+  }
+
+  .features.feature-1 {
+    background-position: 50% 10%;
+  }
+
+  .features.feature-2 {
+    background-position: 50% 30%;
   }
 
   .features .price {
